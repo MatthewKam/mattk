@@ -12,6 +12,11 @@ ul,li{
 	margin:0;
 	padding:0;
 }
+#design{text-align:right;}
+#illustrate{text-align: center;}
+#food{text-align:right;}
+#gastro{text-align: center;}
+
 .cb-slideshow,
 .cb-slideshow:after { 
 	position:absolute;
