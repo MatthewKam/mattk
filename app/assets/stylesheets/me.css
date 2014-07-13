@@ -2,8 +2,10 @@
 
 /*LANDING SECTION*/
 .landing{
-	width:100vh;
 	height:100vh;
+	width:100%;
+	margin: 0;
+	padding:0;
 }
 div.titles{
 	height: 249px;
@@ -267,11 +269,15 @@ ol,ul {
 /*ABOUT ME SECTION*/
 
 .aboutme{
-	width:1425px;
-	height:805px;
-	border:1px solid green;
+	width:100%;
+	height:790px;
+	margin-left: -8px;
+	margin-top: -8px;
+	padding right:15px;
+	}
+.abowt{
+	font-family: 'Oswald', sans-serif;
 }
-
 
 
 
@@ -291,11 +297,12 @@ ol,ul {
 	overflow: hidden;
 }
 .portfolio{
-	border:1px solid red;
 	width:100%;
 	height:100%;
 	background-color:white;
-
+	margin-left: -8px;
+	padding-right: 15px;
+	background-image: url("subtle_dots.png");
 }
 .grid-wrap {
 	margin: 10px auto 0;
@@ -306,10 +313,15 @@ ol,ul {
 	perspective: 1500px;
 }
 h1#ptitle{
-	font-size:100px;
-	margin-top:-30px;
-	margin-bottom:-25px;
-	text-align: center;
+	font-size:130px;
+	margin-top:-29px;
+	margin-left:305px;
+	text-align:left;
+	position:absolute;
+	font-family: 'Oswald', sans-serif; 
+	color:#D1DEDF;
+	text-shadow: 1px 1px #677380;
+	letter-spacing: -5px;
 }
 .grid {
 	position: relative;
@@ -318,6 +330,7 @@ h1#ptitle{
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	text-align: center;
+	padding-top: 125px;
 }
 .link-to{
 	text-decoration: none;
@@ -337,7 +350,7 @@ h1.webdev-text.link-to {
 .grid .placeholder {
 	width: 340px;
 	height: 200px;
-	padding-top: 15px;
+	padding-top: 8px;
 }
 
 .grid figure {
@@ -444,6 +457,7 @@ h1.webdev-text.link-to {
 	height: auto;
 	pointer-events: auto;
 	visibility: visible;
+	background-image: url("subtle_dots.png")
 }
 
 .content > div {
@@ -454,7 +468,7 @@ h1.webdev-text.link-to {
 	overflow: hidden;
 	height: 0;
 	opacity: 0;
-	background: #fff;
+	background-image:url("subtle_dots.png");
 }
 
 .content > div.show {
@@ -560,8 +574,6 @@ p.webdev-text:nth-child(3) {
 	margin-top:110px;
 	float:left;
 	margin-left:75px;
-
-
 }
 .webdev-img.imac img{
 	height:464px;
@@ -620,27 +632,34 @@ div.summary{
 */
 
 @media screen and (max-width: 1325px) {
-div.summary{
-	width: 560px;
+	div.summary{
+		width: 560px;
+	}
 }
 @media screen and (max-width: 1275px) {
-div.summary{
-	width: 490px;
+	div.summary{
+		width: 490px;
+	}
 }
 @media screen and (max-width: 1200px) {
-div.summary{
-	width: 450px;
+	div.summary{
+		width: 450px;
+	}
 }
 @media screen and (max-width: 1165px) {
 div.summary{
 	width: 390px;
 	margin-left: 6px;
+	}
 }
 @media screen and (max-width: 1067px) {
-div.summary{
-	width: 630px;
-	margin-left: 60px;
-	margin-top: 10px;
+	div.summary{
+		width: 630px;
+		margin-left: 60px;
+		margin-top: 10px;
+	}
+	h1#ptitle{
+	margin-left:25%;
 }
 }
 @media screen and (max-width: 1000px) {
@@ -650,6 +669,13 @@ div.summary{
 		width: 300px;
 		height: 212px;
 		margin-left:40px;
+	}
+
+}
+@media screen and (max-width: 800px) {
+
+	h1#ptitle{
+		margin-left: 20%;
 	}
 
 }
@@ -675,8 +701,18 @@ div.summary{
 		margin-left: 10px;
 		margin-top: 10px;
 	}
+	h1#ptitle{
+		margin-left: 15%;
+	}
 }
+@media screen and (max-width: 600px) {
 
+	h1#ptitle{
+		font-size: 120px;
+		margin-left: 20%;
+	}
+
+}
 @media screen and (max-width:525px) {
 
 	.webdev-img.imac img{
@@ -686,6 +722,10 @@ div.summary{
 	}
 	div.summary {
 		width: 450px;
+	}
+	h1#ptitle{
+		font-size: 110px;
+		margin-left: 5%;
 	}
 }
 
@@ -697,6 +737,10 @@ div.summary{
 	}
 	div.summary {
 		width: 350px;
+	}
+	h1#ptitle{
+		font-size: 100px;
+		margin-left: 5%;
 	}
 }
 
@@ -717,9 +761,11 @@ div.summary{
 /*CONTACT ME SECTION*/
 
 .contactme{
-	width:1425px;
+	width:100%;
 	height:805px;
-	border:1px dashed green;
+	overflow: hidden;
+	margin-left: -8px;
+	padding-right: 15px;
 }
 
 
