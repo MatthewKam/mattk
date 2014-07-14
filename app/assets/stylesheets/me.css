@@ -345,67 +345,86 @@ ol,ul {
 
 /*ABOUT ME SECTION*/
 h1.abowt{
-	font-size: 150px;
+	font-size: 180px;
 	margin:0;
 	text-align: center;
 }
 h1#am{
 	margin:0 auto;
+	text-shadow:3px 3px #D17B31;
+}
+h1#am:hover{
+	text-shadow:3px 3px #5E8D5F;
 }
 div#outabowt{
-	margin-left: 20px;
-	width: 650px;
+	width: 760px;
 }
 .aboutme{
-	width:100%;
+	width:99%;
 	height:805px;
 	margin-bottom: -10px;
 	text-align: center;
 	border:1px solid white;
-	}
+}
+.aboutme div{
+	display: inline-block;
+}
 .abowt{
 	font-family: 'Oswald', sans-serif;
 	margin-top: -10px;
 	font-size: 30px;
 }
 div.abowt#outabowt{
-	margin-top:50px;
+	margin-top:60px;
 	text-align: center;
-	margin-left: 50px;
 }
 a.abowt#drop{
 	text-decoration: none;
 	color:black;
 }
 a.abowt#drop:hover{
-	font-size: 20px;
-	color:green;
+	font-size: 35px;
+	color:#D17B31;
 }
-a.abowt#photos{
+a.abowt{
 	text-decoration: none;
 	color:black;
 	margin-left:2px;
 }
-
-a.abowt#photos:hover{
-	font-size:20px;
-	color:green;
+a.abowt:hover{
+	font-size:35px;
+	color:#5E8D5F;
+	text-decoration: underline;
 }
-a.abowt#food{
-	text-decoration: none;
-	color:black;
-	margin-left:2px;
+div#rightface{
+	background-image: url("faces3right.png");
+	background-size: contain;
+	width:260px;
+	height: 800px;
+	background-repeat:no-repeat;
+	float: right;
+	margin-top: 5px;
 }
+div#rightface:hover{
+	background-image: url("faces2right.png");
+	overflow: hidden;
+	margin-top: 10px;
 
-a.abowt#food:hover{
-	font-size:20px;
-	color:green;
 }
-
-
-
-
-
+div#leftface{
+	background-image: url("faces3left.png");
+	background-size: contain;
+	width:260px;
+	height: 770px;
+	background-repeat:no-repeat;
+	float: left;
+	margin-top: 5px;
+}
+div#leftface:hover{
+	background-image: url("faces2left.png");
+	overflow: hidden;
+	margin-top: 10px;
+}
 
 
 
@@ -447,9 +466,10 @@ h1#ptitle{
 	text-align:left;
 	position:absolute;
 	font-family: 'Oswald', sans-serif; 
-	color:#D1DEDF;
-	text-shadow: 1px 1px #677380;
+	color:#677380;
+	text-shadow: 3px 3px #D1DEDF;
 	letter-spacing: -5px;
+	
 }
 
 .grid {
@@ -833,9 +853,13 @@ div#icons{
 h1#contact {
 	font-size: 140px;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 100px;
+	margin-bottom: 30px;
 	color:#3E4146;
 	text-shadow:2px 2px 2px #23375F;
+}
+h1#contact:hover{
+	text-shadow:none;
 }
 .contactlink{
 	width:150px;
