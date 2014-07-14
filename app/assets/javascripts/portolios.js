@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(){
     $('a[href="#dos"]').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')

@@ -1,4 +1,81 @@
 
+body{
+	margin:0;
+}
+
+/*ARROW*/
+.arrowdown{
+	background-image: url("darrow1.png");
+	height: 50px;
+	width:50px;	
+	background-size: contain;
+	background-repeat:no-repeat;
+	position:absolute;
+}
+.arrowdown:hover{
+	background-image: url("darrow2.png");
+}
+.arrowup{
+	background-image: url("uparrow1.png");
+	height: 50px;
+	width:50px;	
+	background-size: contain;
+	background-repeat:no-repeat;
+	position:absolute;
+}
+.arrowup:hover{
+	background-image: url("uparrow2.png");
+}
+.uparrow{
+	background-image: url("uarrow1.png");
+	height: 50px;
+	width:50px;	
+	background-size: contain;
+	background-repeat:no-repeat;
+	position:absolute;
+}
+.uparrow:hover{
+	background-image: url("uarrow2.png");
+}
+div#land{
+	z-index: 1007;
+	left:20px;
+	top:20px;
+}
+
+div#about{
+	margin-top: 20px;
+	left:20px;
+	z-index: 1010;
+}
+div#me{
+	right: 20px;
+	margin-top: 20px;
+	z-index: 1010;
+}
+
+div#port {
+	margin-top: 20px;
+	left: 20px;
+}
+div#folio{
+	right: 20px;
+	margin-top: 20px;
+}
+div#last{
+	right: 20px;
+	margin-top: 20px;
+}
+div#page{
+	left: 20px;
+	margin-top: 20px;
+}
+
+
+
+
+
+
 
 /*LANDING SECTION*/
 .landing{
@@ -6,9 +83,11 @@
 	width:100%;
 	margin: 0;
 	padding:0;
+	overflow: hidden;
 }
 div.titles{
 	height: 249px;
+	bottom: 30px;
 }
 ul,li{
 	margin:0;
@@ -53,7 +132,6 @@ ul,li{
 .cb-slideshow li div { 
     z-index: 1000;
     position: absolute;
-    bottom: 30px;
     left: 0px;
     width: 100%;
     text-align: center;
@@ -249,10 +327,9 @@ ul,li{
 
 ol,ul {
 	list-style:none;
+	margin:0;
+	padding:0;
 }
-
-
-
 
 
 
@@ -267,21 +344,63 @@ ol,ul {
 
 
 /*ABOUT ME SECTION*/
-
+h1.abowt{
+	font-size: 150px;
+	margin:0;
+	text-align: center;
+}
+h1#am{
+	margin:0 auto;
+}
+div#outabowt{
+	margin-left: 20px;
+	width: 650px;
+}
 .aboutme{
 	width:100%;
-	height:790px;
-	margin-left: -8px;
-	margin-top: -8px;
-	padding right:15px;
+	height:805px;
+	margin-bottom: -10px;
+	text-align: center;
+	border:1px solid white;
 	}
 .abowt{
 	font-family: 'Oswald', sans-serif;
+	margin-top: -10px;
+	font-size: 30px;
+}
+div.abowt#outabowt{
+	margin-top:50px;
+	text-align: center;
+	margin-left: 50px;
+}
+a.abowt#drop{
+	text-decoration: none;
+	color:black;
+}
+a.abowt#drop:hover{
+	font-size: 20px;
+	color:green;
+}
+a.abowt#photos{
+	text-decoration: none;
+	color:black;
+	margin-left:2px;
 }
 
+a.abowt#photos:hover{
+	font-size:20px;
+	color:green;
+}
+a.abowt#food{
+	text-decoration: none;
+	color:black;
+	margin-left:2px;
+}
 
-
-
+a.abowt#food:hover{
+	font-size:20px;
+	color:green;
+}
 
 
 
@@ -296,12 +415,21 @@ ol,ul {
 .noscroll {
 	overflow: hidden;
 }
+.github{
+	background-image: url("ghub1.png");
+	background-size: contain;
+	height:	40px;
+	width: 40px;
+	background-repeat: no-repeat;
+	margin:0 auto;
+}
+.github:hover{
+	background-image:url("ghub2.png");
+}
 .portfolio{
 	width:100%;
 	height:100%;
 	background-color:white;
-	margin-left: -8px;
-	padding-right: 15px;
 	background-image: url("subtle_dots.png");
 }
 .grid-wrap {
@@ -323,6 +451,7 @@ h1#ptitle{
 	text-shadow: 1px 1px #677380;
 	letter-spacing: -5px;
 }
+
 .grid {
 	position: relative;
 	-webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
@@ -337,9 +466,16 @@ h1#ptitle{
 }
 a.webdev-text.link-to {
 	font-size:50px;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.4);
+}
+a.webdev-text.link-to:hover {
+	font-size:50px;
+	text-shadow:none;
+
 }
 h1.webdev-text.link-to {
 	font-size:50px;
+
 }
 .view-full .grid {
 	-webkit-transform: translateZ(-1500px);
@@ -477,8 +613,20 @@ h1.webdev-text.link-to {
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
 }
-
-.icon:before {
+.close-content {
+background-image: url("closecontent1.png");
+width: 30px;
+height: 30px;
+background-size: contain;
+z-index: 11;
+position: fixed;
+top: 20px;
+right: 20px;
+}
+.close-content:hover {
+background-image: url("closecontent2.png");
+}
+/*.icon:before {
 	font-family: 'fontawesome';
 	speak: none;
 	font-style: normal;
@@ -516,7 +664,7 @@ h1.webdev-text.link-to {
 
 .close-content:before {
 	content: "\e602";
-}
+}*/
 
 /* webdev content */
 
@@ -631,6 +779,129 @@ div.summary{
 }
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACT ME SECTION*/
+.contactme{
+	font-family: 'Oswald';
+	width:100%;
+	height:805px;
+	overflow: hidden;
+
+	background-image: url("White_background_750_750.jpg");
+	background-size: cover;
+}
+.contactme div{
+	display:inline-block;
+}
+
+div#say {
+	width: 700px;
+	height: 800px;
+	margin-left: 20px;
+	text-align: center;
+	vertical-align: top;
+}
+div#icons{
+	display:inline-block;
+	text-align: center;
+	width:580px;
+}
+
+#r2d2{
+	background-image: url("r2d2mail.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height:770px; 
+	width:550px;
+	margin-left:40px;
+	margin-top: 11px;
+}
+h1#contact {
+	font-size: 140px;
+	text-align: center;
+	margin-top: 40px;
+	color:#3E4146;
+	text-shadow:2px 2px 2px #23375F;
+}
+.contactlink{
+	width:150px;
+	height:150px;
+}
+#email{
+	background-image: url("gmail1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	text-decoration: underline;
+
+}
+#email:hover{
+	background-image: url("gmail2.png");
+}
+#linkedin{
+	background-image: url("linked1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+#linkedin:hover{
+	background-image: url("linked2.png");
+}
+#github{
+	background-image: url("git1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+#github:hover{
+	background-image: url("git2.png");
+}
+#angellist{
+	background-image: url("angel1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+#angellist:hover{
+	background-image: url("angel2.png");
+}
+#googleplus{
+	background-image: url("gplus1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+
+}
+#googleplus:hover{
+	background-image: url("gplus2.png");
+}
+
+
+
+
+
+
+/*MEDIA READY*/
+@media screen and (max-width: 1360px) {
+	div#say {
+		width: 600px;
+		height: 700px;
+
+	}
+	h1#contact {
+		width: 540px;
+		margin:1px;
+	}
+}
 @media screen and (max-width: 1325px) {
 	div.summary{
 		width: 560px;
@@ -640,16 +911,49 @@ div.summary{
 	div.summary{
 		width: 490px;
 	}
+	#r2d2{ 
+	width:490px;
+	}
 }
 @media screen and (max-width: 1200px) {
 	div.summary{
 		width: 450px;
+	}
+	h1#contact {
+		font-size: 100px;
+		margin:0 auto;
+	}
+	div#icons {
+		width: 600px;
+		height: 400px;
+	}
+	#r2d2{
+		height:770px; 
+		width:400px;
+		margin-left:40px;
+		margin-top: 65px;
+	}
+	div#say {
+		width: 600px;
+		height: 500px;
+		margin-top: 140px;
+
 	}
 }
 @media screen and (max-width: 1165px) {
 div.summary{
 	width: 390px;
 	margin-left: 6px;
+	}
+	div#say {
+		width: 500px;
+		height: 500px;
+		margin-top: 140px;
+
+	}
+	div#icons {
+		width: 540px;
+		height: 400px;
 	}
 }
 @media screen and (max-width: 1067px) {
@@ -660,7 +964,12 @@ div.summary{
 	}
 	h1#ptitle{
 	margin-left:25%;
-}
+	}
+	#r2d2{
+		width:290px;
+		margin-left:40px;
+		margin-top: 165px;
+	}
 }
 @media screen and (max-width: 1000px) {
 
@@ -671,6 +980,32 @@ div.summary{
 		margin-left:40px;
 	}
 
+}
+@media screen and (max-width: 900px) {
+	.contactme{
+		text-align: center;
+	}
+	h1#contact {
+		font-size: 90px;
+		width:400px;
+		text-shadow:1px 1px 1px white;
+	}
+	div#icons {
+		width: 600px;
+		height: 400px;
+	}
+	div#say {
+		width: 600px;
+		height: 500px;
+		margin:0 auto;
+		margin-top: 100px;
+	}
+	#r2d2 {
+		position: absolute;
+		width: 400px;
+		left:10px;
+		z-index:-100;
+	}
 }
 @media screen and (max-width: 800px) {
 
@@ -727,6 +1062,25 @@ div.summary{
 		font-size: 110px;
 		margin-left: 5%;
 	}
+	h1#contact {
+		font-size: 80px;
+		width:380px;
+	}
+	div#icons {
+		width: 380px;
+		height: 400px;
+	}
+	div#say {
+		width: 380px;
+		height: 500px;
+		margin:0 auto;
+		margin-top: 100px;
+	}
+	#r2d2 {
+		position: absolute;
+		width: 330px;
+		z-index:-100;
+	}
 }
 
 @media screen and (max-width: 440px) {
@@ -743,33 +1097,6 @@ div.summary{
 		margin-left: 5%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CONTACT ME SECTION*/
-
-.contactme{
-	width:100%;
-	height:805px;
-	overflow: hidden;
-	margin-left: -8px;
-	padding-right: 15px;
-}
-
-
-
 
 
 

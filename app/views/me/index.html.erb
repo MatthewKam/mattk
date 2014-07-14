@@ -5,7 +5,7 @@
 </head>
 <div class="outerbox"> <!-- contains everything -->
 	<div class="landing" id="uno">
-		<a href="#dos"><div class="arrow"></div></a>
+		<a href="#dos"><div class="arrowdown" id="land"></div></a>
 		<ul class="cb-slideshow">
       <li><span>Image 01</span><div class="titles"><h3 id="develop">DEVELOPER</h3></div></li>
       <li><span>Image 05</span><div class="titles"><h3 id="food">FOODIE</h3></div></li>
@@ -16,15 +16,20 @@
      </ul>
 	</div>
 	<div class="aboutme" id="dos">
-		<a href="#tres"><div class="arrow"></div></a>
-		<h1 class="abowt" id="am">About Me</h1>
-		<p class="abowt">Hello<span>Aloha</span>,</p>
-		<p class="abowt">I am <strong>Matt Kam</strong>, a Web Developer and Designer.</p>
-		 <p class="abowt">I believe in clean code, with function and purpose, and stunning visuals that make people want more. I'm a visual glutton and a brown-belt in web dev. When I'm not slaying people on the basketball courts or finding the best food in town, you can find me at a local coffee shop coding or roaming about taking photos.</p>
-
+		<a href="#tres"><div class="arrowdown" id="about"></div></a>
+		<a href="#uno"><div class="arrowup" id="me"></div></a>
+		<div class="abowt" id="outabowt">
+			<h1 class="abowt" id="am">About Me</h1>
+			<div id="alittleabowt">
+				<p class="abowt">Hello,</p>
+				<p class="abowt">I'm <strong>Matt Kam</strong>, a Web Developer and Designer.</p>
+				 <p class="abowt">I believe in clean code, with function and purpose, and stunning visuals that bring people in. I'm a visual glutton and a brown-belt in web dev. When I'm not slaying people on the basketball courts or finding the best<a href="http://www.yelp.com/user_details?userid=aoS_zGOHnh_pI2iHvV6UgA" target="_blank" class="abowt" id="food"><strong> food</strong></a> in town, you can find me at a local coffee shop coding or roaming about taking <a href="https://www.flickr.com/photos/matt_kam/" target="_blank" class="abowt" id="photos"><strong>photos</strong></a>.</p><p class="abowt"><a href="#quatro" class="abowt" id="drop" >Drop me a line and let's meet up for coffee.</a></p>
+			</div>
+		</div>
 	</div>
 	<div class="portfolio" id="tres"> <!-- contains portfolio -->
-
+		<a href="#quatro"><div class="arrowdown" id="port"></div></a>
+		<a href="#dos"><div class="arrowup" id="folio"></div></a>
 		<section class="grid3d horizontal" id="grid3d"> <!-- grid3d -->
 			<div class="grid-wrap"> <!-- grid-wrap -->
 				<h1 id="ptitle">PROJECTS</h1>
@@ -134,23 +139,46 @@
 					</div>
 				</div>
 				<span class="loading"></span>
-				<span class="icon close-content"></span>
+				<span class="close-content"></span>
 			</div> <!-- showpopup end -->
 		</section> <!-- grid3d end -->
-		<a href="#quatro"><div class="arrow"></div></a>
+		
 	</div><!-- /portfolio end-->
 	<div class="contactme" id="quatro">
-		<a href="#uno"><div class="arrow"></div></a>
-		<h1>Contact Me</h1>
-		<p id="name">
-
-		</p>
-		<a href="mailto:matt.ph.kam@gmail.com?Subject=From%20MattKam.com" target="_top">EMAIL</a>
-		<a href="https://linkedin.com/in/mattkam" target="_blank">LinkedIn</a>
-		<a href="https://github.com/MatthewKam" target="_blank">Github</a>
-		<a href="https://angel.co/mattkam" target="_blank">AngelList</a>
-		<a href="https://www.flickr.com/photos/matt_kam/">Flickr</a>
-
+		<a href="#tres"><div class="arrowup" id="last"></div></a>
+		<a href="#uno"><div class="uparrow" id="page"></div></a>
+		<div id="r2d2"></div>
+		<div id="say">
+			<h1 id="contact">Say Hello!</h1>
+			<div id="icons">
+				<div class="me">
+					<a href="mailto:matt.ph.kam@gmail.com?Subject=From%20MattKam.com,%20Let's%20Grab%20Coffee">
+						<div class="contactlink" id="email"></div>
+					</a>
+				</div>
+				<div class="me">
+					<a href="https://linkedin.com/in/mattkam" target="_blank">
+						<div class="contactlink" id="linkedin"></div>
+					</a>
+				</div>
+				<div class="me">
+					<a href="https://github.com/MatthewKam" target="_blank">
+						<div class="contactlink" id="github"></div>
+					</a>
+				</div>
+				<div class="me">
+					<a href="https://angel.co/mattkam" target="_blank">
+						<div class="contactlink" id="angellist"></div>
+					</a>
+				</div>
+				<div class="me">
+					<a href="https://plus.google.com/116393347215584407059/about/p/pub" target="_blank">
+						<div class="contactlink" id="googleplus"></div>
+					</a>
+				</div>	
+			</div>
+			
+		</div>
 	</div>
 </div> <!-- outerbox end -->
 <script>
