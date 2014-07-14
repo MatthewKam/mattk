@@ -430,6 +430,32 @@ div#leftface:hover{
 
 
 
+/*SKILLS*/
+
+.skills{
+	height:805px;
+	width:100%;
+	background:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*PORTFOLIO SECTION*/
 .noscroll {
 	overflow: hidden;
