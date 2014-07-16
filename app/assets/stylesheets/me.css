@@ -57,10 +57,12 @@ div#me{
 div#port {
 	margin-top: 20px;
 	left: 20px;
+	z-index: 1012;
 }
 div#folio{
 	right: 20px;
 	margin-top: 20px;
+	z-index:1012;
 }
 div#last{
 	right: 20px;
@@ -763,45 +765,6 @@ right: 20px;
 .close-content:hover {
 background-image: url("closecontent2.png");
 }
-/*.icon:before {
-	font-family: 'fontawesome';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.close-content {
-	position: fixed;
-	z-index: 1000;
-	top: 0;
-	right: 10px;
-	font-size: 1.6em;
-	color: #aaa;
-	cursor: pointer;
-	pointer-events: none;
-	padding: 1em;
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-}
-
-.close-content:hover {
-	color: #999;
-}
-
-.content > div.show ~ .close-content {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.close-content:before {
-	content: "\e602";
-}*/
 
 /* webdev content */
 
@@ -1195,7 +1158,7 @@ div.summary{
 	.grid figure,
 	.grid .placeholder {
 		width: 300px;
-		height: 212px;
+		height: 170px;
 		margin-left:40px;
 	}
 
@@ -1232,6 +1195,9 @@ div.summary{
 @media screen and (max-width: 900px) {
 	.contactme{
 		text-align: center;
+	}
+	h1#am.abowt {
+		margin-top: 110px;
 	}
 	h1#contact {
 		font-size: 90px;
@@ -1302,6 +1268,9 @@ div.summary{
 
 }
 @media screen and (max-width: 750px){
+	h1#am.abowt {
+		margin-top: 70px;
+	}
 	div#outabowt{
 		width: 350px;
 	}
@@ -1332,7 +1301,7 @@ div.summary{
 	.grid figure,
 	.grid .placeholder {
 		width: 300px;
-		height: 212px;
+		height: 170px;
 	}
 	.webdev-img.imac img{
 		height:331px;
@@ -1464,6 +1433,7 @@ div.summary{
 		padding-top:50px;
 		padding-left:16px;
 	}
+
 	div#say {
 		margin-left:-35px ;
 	}
@@ -1473,6 +1443,7 @@ div.summary{
 	h1#ptitle{
 		font-size: 100px;
 		margin-left: 5%;
+		margin-top: -2px;
 	}
 	div.sk.frontend {
 		margin-left: 128px;
@@ -1505,8 +1476,87 @@ div.summary{
 	}
 }
 
-
-
-
-
-
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	div#outabowt {
+		width: 280px;
+		margin-left: 10px;
+	}
+	div.abowt#outabowt {
+		margin-top: 0px;
+		text-align: center;
+	}
+	h1#skills {
+		font-size: 100px;
+		margin-top: 50px;
+		margin-left: 10px;
+		width: 300px;
+	}
+	h1#ptitle {
+		font-size: 80px;
+		margin-left: 7%;
+		margin-top: 60px;
+	}
+	.grid figure, .grid .placeholder {
+		width: 240px;
+		height: 120px;
+		margin-left: 5px;
+	}
+	.grid{
+		padding-top: 155px;
+		padding-bottom: 10px;
+	}
+	#r2d2 {
+		width: 270px;
+		margin-top: 70px;
+	}
+	h1#contact{
+		font-size: 80px;
+		width: 280px;
+		margin-top: -50px;
+		margin-left: 20px;
+	}
+	div#say {
+		margin-left: -35px;
+		width: 300px;
+	}
+	#email{
+		width: 120px;
+	}
+	#linkedin{
+		width:120px;
+	}
+	#github{
+		width: 120px;
+	}
+	#angellist{
+		width: 120px;
+	}
+	#googleplus{
+		width: 120px;
+	}
+	div#icons {
+		width: 300px;
+		height: 400px;
+		margin-left: 10px;
+	}
+	div.sk.frontend {
+		margin-left: 90px;
+	}
+	div.sk.graphicdesign {
+		right: 16%;
+	}
+	div.sk.backend {
+		left: 90px;
+	}
+	div.sk.frontend:hover {
+		margin-left: 110px;
+	}
+	div.sk.graphicdesign:hover {
+		left: 60px;
+	}
+	div.sk.backend:hover {
+		left: 95px;
+	}
+	
+}
