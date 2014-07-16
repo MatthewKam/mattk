@@ -511,7 +511,7 @@ div.sk.graphicdesign{
 	background-image: url("graphicdesign1.png");
 	height: 375px;
 	width: 450px;
-	margin-top: 265px;
+	margin-top: 315px;
 }
 div.sk.graphicdesign:hover{	
 	background-image: url("graphicdesign2.png");
@@ -1555,6 +1555,7 @@ div.summary{
 	}
 	#design {
 		letter-spacing: -3px;
+		margin-right: 5px;
 	}
 	h3#develop {
 		letter-spacing: -6px;
