@@ -936,7 +936,7 @@ h1#contact {
 	margin-top: 100px;
 	margin-bottom: 30px;
 	color:black;
-	text-shadow:2px 2px 2px #23375F;
+	text-shadow:2px 2px 2px 2px #23375F;
 }
 h1#contact:hover{
 	text-shadow:none;
@@ -1202,8 +1202,12 @@ div.summary{
 	h1#contact {
 		font-size: 90px;
 		width:400px;
-		text-shadow:1px 1px 1px #31609B;
+		text-shadow:2px 2px #31609B;
 		color: #D6DBE1;
+	}
+	h1#contact:hover {
+		text-shadow: none;
+		color: gold;
 	}
 	div#icons {
 		width: 600px;
@@ -1497,6 +1501,25 @@ div.summary{
 		margin-left: 7%;
 		margin-top: 60px;
 	}
+	.webdev-img {
+		height: 305px;
+		width: 300px;
+	}
+	div.summary {
+		width: 300px;
+		margin-top: -10px;
+	}
+	a.webdev-text.link-to {
+		font-size: 45px;
+	}
+	a.webdev-text.link-to:hover {
+		font-size: 45px;
+	}
+	.webdev-img.imac img {
+		height: 244px;
+		padding-top: 40px;
+		padding-left: 20px;
+	}
 	.grid figure, .grid .placeholder {
 		width: 240px;
 		height: 120px;
@@ -1510,30 +1533,57 @@ div.summary{
 		width: 270px;
 		margin-top: 70px;
 	}
-	h1#contact{
-		font-size: 80px;
+	h1#contact {
+		font-size: 65px;
 		width: 280px;
-		margin-top: -50px;
+		margin-top: -40px;
 		margin-left: 20px;
 	}
 	div#say {
 		margin-left: -35px;
 		width: 300px;
+		height:460px;
+	}
+	#gastro {
+		text-align: center;
+		letter-spacing: -11px;
+	}
+	#food {
+		text-align: right;
+		margin-right: 20px;
+		letter-spacing: -2px;
+	}
+	#design {
+		letter-spacing: -3px;
+	}
+	h3#develop {
+		letter-spacing: -6px;
+	}
+	h3#photo {
+		font-size: 50px;
+		letter-spacing: -2px;
 	}
 	#email{
-		width: 120px;
+		width: 110px;
+		margin-bottom: -30px;
+		margin-right: 20px;
 	}
 	#linkedin{
-		width:120px;
+		width: 110px;
+		margin-bottom: -30px;
 	}
 	#github{
-		width: 120px;
+		width: 110px;
+		margin-bottom: -30px;
+		margin-right: 20px;
 	}
 	#angellist{
-		width: 120px;
+		width: 110px;
+		margin-bottom: -30px;
 	}
 	#googleplus{
-		width: 120px;
+		width: 110px;
+		margin-bottom: -30px;
 	}
 	div#icons {
 		width: 300px;
@@ -1558,5 +1608,87 @@ div.summary{
 	div.sk.backend:hover {
 		left: 95px;
 	}
-	
+	.aboutme {
+		width: 99%;
+		height: 570px;
+		margin-bottom: -10px;
+		text-align: center;
+		border: 1px solid white;
+	}
+	h1#am.abowt {
+		margin-top: 55px;
+		font-size: 65px;
+	}
+	.abowt {
+		font-size: 15px;
+	}
+	a#food {	
+		font-size: 18px;
+		margin-right: 7px;
+	}
+	a#food:hover {
+		font-size: 25px;
+	}
+	a.abowt#drop:hover {
+		font-size: 30px;
+	}
+	.skills {
+		height: 570px;
+	}
+	div.sk.frontend {
+		margin-left: 20px;
+		width: 130px;
+		margin-top: 200px;
+	}
+	div.sk.frontend:hover {
+		margin-left: 35px;
+	}
+	div.sk.backend {
+		width: 125px;
+		margin-top: 200px;
+		position: absolute;
+		margin-left: 90px;
+		height: 160px;
+	}
+	div.sk.backend:hover {
+		margin-top: 200px;
+	}
+	div.sk.graphicdesign {
+		margin-top: 380px;
+	}
+	.contactme {
+		height: 585px;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
