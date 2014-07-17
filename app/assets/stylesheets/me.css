@@ -694,7 +694,9 @@ h1.webdev-text.link-to {
 	display: block;
 	width: 100%;
 }
-
+.grid figure img:hover {
+width: 99%;
+}
 .content,
 .loading {
 	position: fixed;
