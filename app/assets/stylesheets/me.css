@@ -65,13 +65,13 @@ div#land{
 div#about{
 	margin-top: 20px;
 	left:20px;
-	z-index: 1010;
+	z-index: 1007;
 }
 
 div#port {
 	margin-top: 20px;
 	left: 20px;
-	z-index: 1012;
+	z-index: 1007;
 }
 div#page{
 	left: 20px;
@@ -80,7 +80,7 @@ div#page{
 div#sk{
 	left:20px;
 	margin-top: 20px;
-	z-index: 1011;
+	z-index: 1007;
 }
 
 
@@ -734,11 +734,12 @@ h1.webdev-text.link-to {
 	height: auto;
 	pointer-events: auto;
 	visibility: visible;
-	background-image: url("subtle_dots.png")
+	background-image: url("subtle_dots.png");
+	z-index:2000;
 }
 
 .content > div {
-	z-index: 10;
+	z-index: 2000;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -759,10 +760,10 @@ background-image: url("closecontent1.png");
 width: 30px;
 height: 30px;
 background-size: contain;
-z-index: 11;
+z-index: 2001;
 position: fixed;
 top: 20px;
-right: 20px;
+left: 20px;
 }
 .close-content:hover {
 background-image: url("closecontent2.png");
