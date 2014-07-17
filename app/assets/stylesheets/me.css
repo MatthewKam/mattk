@@ -107,10 +107,10 @@ ul,li{
 	padding:0;
 }
 #photo{text-align: center;}
-#design{text-align:right;}
-#illustrate{text-align: right;}
+#design{text-align:right; margin-right: 20px;}
+#illustrate{text-align: right;margin-right: 20px;}
 #food{text-align:left;}
-#gastro{text-align: center;margin-top: -345px;}
+#gastro{text-align: center;margin-top: -310px;}
 
 .cb-slideshow,
 .cb-slideshow:after { 
