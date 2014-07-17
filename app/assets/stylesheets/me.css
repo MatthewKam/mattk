@@ -2,6 +2,36 @@
 body{
 	margin:0;
 }
+/*NAVIGATION*/
+div#rightside {
+position: fixed;
+z-index: 2000;
+top: 20px;
+right: 20px;
+}
+a.fixednav {
+text-decoration: none;
+font-family: 'Oswald';
+color: #BBBCBF;
+font-size: 30px;
+text-align: right;
+margin-left: 20px;
+}
+a.fixednav:hover {
+color: #0B9444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*ARROW*/
 .arrowdown{
@@ -14,17 +44,6 @@ body{
 }
 .arrowdown:hover{
 	background-image: url("darrow2.png");
-}
-.arrowup{
-	background-image: url("uparrow1.png");
-	height: 50px;
-	width:50px;	
-	background-size: contain;
-	background-repeat:no-repeat;
-	position:absolute;
-}
-.arrowup:hover{
-	background-image: url("uparrow2.png");
 }
 .uparrow{
 	background-image: url("uarrow1.png");
@@ -48,25 +67,11 @@ div#about{
 	left:20px;
 	z-index: 1010;
 }
-div#me{
-	right: 20px;
-	margin-top: 20px;
-	z-index: 1010;
-}
 
 div#port {
 	margin-top: 20px;
 	left: 20px;
 	z-index: 1012;
-}
-div#folio{
-	right: 20px;
-	margin-top: 20px;
-	z-index:1012;
-}
-div#last{
-	right: 20px;
-	margin-top: 20px;
 }
 div#page{
 	left: 20px;
@@ -74,11 +79,6 @@ div#page{
 }
 div#sk{
 	left:20px;
-	margin-top: 20px;
-	z-index: 1011;
-}
-div#ill{
-	right:20px;
 	margin-top: 20px;
 	z-index: 1011;
 }
