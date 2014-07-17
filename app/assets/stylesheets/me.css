@@ -106,10 +106,11 @@ ul,li{
 	margin:0;
 	padding:0;
 }
+#photo{text-align: center;}
 #design{text-align:right;}
-#illustrate{text-align: center;}
-#food{text-align:right;}
-#gastro{text-align: center;}
+#illustrate{text-align: right;}
+#food{text-align:left;}
+#gastro{text-align: center;margin-top: -345px;}
 
 .cb-slideshow,
 .cb-slideshow:after { 
@@ -506,7 +507,7 @@ div.sk.backend{
 div.sk.backend:hover{
 	background-image: url("backend2.png");
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 125px;
 }
 div.sk.graphicdesign{
 	background-image: url("graphicdesign1.png");
